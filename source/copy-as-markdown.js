@@ -110,7 +110,7 @@ function getSelectionAsHTML() {
 	return '<' + containerTagName + '>' + wrapper.innerHTML + '</' + containerTagName + '>';
 }
 
-browser.runtime.onMessage.addListener(async message => {
+browser.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
 	if (message.actionType === '') {
 		return;
 	}
@@ -123,7 +123,21 @@ browser.runtime.onMessage.addListener(async message => {
 	try {
 		const markdownContent = turndownService.turndown(htmlContent);
 		await navigator.clipboard.writeText(markdownContent);
+		// 剪贴板写入成功，尝试给用户反馈（通过临时修改页面标题）
+		document.title = '✓ 已复制到剪贴板';
+		setTimeout(() => {
+			document.title = '复制为 Markdown';
+		}, 2000);
 	} catch (error) {
-		console.error(error);
+		console.error('剪贴板写入失败:', error);
+		// 显示错误状态
+		document.title = '✗ 复制失败';
+		setTimeout(() => {
+			document.title = '复制为 Markdown';
+		}, 2000);
 	}
+
+	// 响应 background script
+	sendResponse({ success: true });
+	return true; // 保持消息通道打开以支持异步响应
 });

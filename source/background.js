@@ -3,15 +3,20 @@ if (typeof browser === 'undefined') {
 	globalThis.browser = chrome;
 }
 
-// Add context menus for specific actions
-const contexts = ['image', 'link', 'selection'];
-for (const context of contexts) {
-	browser.contextMenus.create({
-		id: `cpy-as-md:${context}`,
-		title: `Copy ${context} as Markdown`,
-		contexts: [context]
-	});
-}
+	// 添加上下文菜单
+	const contexts = ['image', 'link', 'selection'];
+	const contextNames = {
+		'image': '图片',
+		'link': '链接',
+		'selection': '选中文本'
+	};
+	for (const context of contexts) {
+		browser.contextMenus.create({
+			id: `cpy-as-md:${context}`,
+			title: `将${contextNames[context]}复制为 Markdown`,
+			contexts: [context]
+		});
+	}
 
 // Listener for events from context menus
 browser.contextMenus.onClicked.addListener(async (info, tab) => {

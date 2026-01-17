@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy as Markdown 测试页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .test-section {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .test-section h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 10px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Copy as Markdown 插件功能测试页面</h1>
+    <p>请使用扩展程序测试以下各项功能。</p>
+
+    <!-- 测试1：基础选中文本 -->
+    <div class="test-section" id="test1">
+        <h3>测试1：基础选中文本</h3>
+        <p>这是一段普通的测试文本，用于测试基本的文本复制功能。请选中这段文字进行测试。</p>
+    </div>
+
+    <!-- 测试2：格式化文本 -->
+    <div class="test-section" id="test2">
+        <h3>测试2：格式化文本</h3>
+        <p>这是一个<strong>粗体文本</strong>测试。</p>
+        <p>这是一个<em>斜体文本</em>测试。</p>
+        <p>这是一个<del>删除线文本</del>测试。</p>
+        <p>这是一个<code>行内代码</code>测试。</p>
+        <p><strong>粗体</strong>和<em>斜体</em>混合使用，<code>代码</code>也可以和<del>删除线</del>组合。</p>
+    </div>
+
+    <!-- 测试3：链接 -->
+    <div class="test-section" id="test3">
+        <h3>测试3：链接</h3>
+        <p><a href="https://www.google.com" id="google-link">这是一个指向 Google 的链接</a></p>
+        <p><a href="https://github.com" id="github-link">这是指向 GitHub 的链接</a></p>
+    </div>
+
+    <!-- 测试4：图片 -->
+    <div class="test-section" id="test4">
+        <h3>测试4：图片</h3>
+        <p>这是一张测试图片：</p>
+        <img src="https://via.placeholder.com/150" alt="测试图片" id="test-image">
+    </div>
+
+    <!-- 测试5：列表 -->
+    <div class="test-section" id="test5">
+        <h3>测试5：无序和有序列表</h3>
+        <ul>
+            <li>第一项</li>
+            <li>第二项</li>
+            <li>第三项</li>
+        </ul>
+        <ol>
+            <li>有序第一项</li>
+            <li>有序第二项</li>
+            <li>有序第三项</li>
+        </ol>
+    </div>
+
+    <!-- 测试6：表格 -->
+    <div class="test-section" id="test6">
+        <h3>测试6：表格</h3>
+        <table id="test-table">
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>城市</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>张三</td>
+                    <td>25</td>
+                    <td>北京</td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>30</td>
+                    <td>上海</td>
+                </tr>
+                <tr>
+                    <td>王五</td>
+                    <td>28</td>
+                    <td>广州</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 测试7：代码块 -->
+    <div class="test-section" id="test7">
+        <h3>测试7：代码块</h3>
+        <pre><code>function helloWorld() {
+    console.log("Hello, World!");
+    return true;
+}</code></pre>
+    </div>
+
+    <!-- 测试8：嵌套内容 -->
+    <div class="test-section" id="test8">
+        <h3>测试8：混合内容</h3>
+        <p>这是一个包含<a href="https://example.com">链接</a>、<strong>粗体</strong>、<em>斜体</em>和<code>代码</code>的混合段落。</p>
+        <ul>
+            <li>列表项包含<strong>粗体文本</strong></li>
+            <li>列表项包含<em>斜体文本</em></li>
+            <li>列表项包含<a href="https://example.com">链接</a></li>
+        </ul>
+    </div>
+
+    <!-- 测试9：标题 -->
+    <div class="test-section" id="test9">
+        <h3>测试9：标题</h3>
+        <h1>一级标题</h1>
+        <h2>二级标题</h2>
+        <h3>三级标题</h3>
+        <h4>四级标题</h4>
+    </div>
+
+    <!-- 测试10：引用块 -->
+    <div class="test-section" id="test10">
+        <h3>测试10：引用块</h3>
+        <blockquote>
+            <p>这是一个引用块的内容。</p>
+            <p>引用块可以包含多段文字。</p>
+        </blockquote>
+    </div>
+
+    <hr>
+    <p><strong>测试说明：</strong>请依次测试以上各项功能，记录复制后的 Markdown 格式是否正确。</p>
+</body>
+</html>

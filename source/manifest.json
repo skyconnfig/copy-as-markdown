@@ -1,7 +1,7 @@
 {
-	"name": "Copy as Markdown",
+	"name": "复制为 Markdown",
 	"version": "0.0.0",
-	"description": "Browser extension to copy hyperlinks, images, and selected text as Markdown",
+	"description": "浏览器扩展程序，可以将超链接、图片和选中的文本复制为 Markdown 格式",
 	"homepage_url": "https://github.com/notlmn/copy-as-markdown",
 	"manifest_version": 3,
 	"minimum_chrome_version": "88",
@@ -22,8 +22,7 @@
 		"default_icon": "copy-as-markdown.png"
 	},
 	"background": {
-		"service_worker": "background.js",
-		"scripts": ["background.js"]
+		"service_worker": "background.js"
 	},
 	"content_scripts": [
 		{
@@ -47,7 +46,7 @@
 				"default": "Alt+X",
 				"mac": "Alt+X"
 			},
-			"description": "Copy selection as markdown"
+			"description": "将选中文本复制为 Markdown"
 		}
 	}
 }
