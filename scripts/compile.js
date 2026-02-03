@@ -9,3 +9,4 @@ const destination = process.argv[2];
 fs.cpSync(path.join(import.meta.dirname, '..', 'dist/'), `${destination}/dist/`, { recursive: true });
 fs.cpSync(path.join(import.meta.dirname, '..', 'src/vendor'), `${destination}/dist/vendor`, { recursive: true });
 fs.cpSync(path.join(import.meta.dirname, '..', 'src/static'), `${destination}/dist/static`, { recursive: true });
+fs.cpSync(path.join(import.meta.dirname, '..', 'src/_locales'), `${destination}/_locales`, { recursive: true });

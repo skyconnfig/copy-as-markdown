@@ -98,14 +98,14 @@ function createBasicMenus(
   if (builtInStyles.singleLink) {
     contextMenusAPI.create({
       id: ContextMenuIds.CurrentTab,
-      title: 'Copy Page Link as Markdown',
+      title: browser.i18n.getMessage('contextMenu_currentTab'),
       type: 'normal',
       contexts: ['page'],
     });
 
     contextMenusAPI.create({
       id: ContextMenuIds.Link,
-      title: 'Copy Link as Markdown',
+      title: browser.i18n.getMessage('contextMenu_link'),
       type: 'normal',
       contexts: ['link'],
     });
@@ -122,13 +122,13 @@ function createSingleLinkCustomFormatMenus(
   for (const format of formats) {
     contextMenusAPI.create({
       id: `current-tab-custom-format-${format.slot}`,
-      title: `Copy Page Link (${format.displayName})`,
+      title: browser.i18n.getMessage('contextMenu_currentTabCustom', format.displayName),
       contexts: ['page'],
     });
 
     contextMenusAPI.create({
       id: `link-custom-format-${format.slot}`,
-      title: `Copy Link (${format.displayName})`,
+      title: browser.i18n.getMessage('contextMenu_linkCustom', format.displayName),
       contexts: ['link'],
     });
   }
@@ -140,14 +140,14 @@ function createSingleLinkCustomFormatMenus(
 function createImageAndSelectionMenus(contextMenusAPI: ContextMenusAPI): void {
   contextMenusAPI.create({
     id: ContextMenuIds.Image,
-    title: 'Copy Image as Markdown',
+    title: browser.i18n.getMessage('contextMenu_image'),
     type: 'normal',
     contexts: ['image'],
   });
 
   contextMenusAPI.create({
     id: ContextMenuIds.SelectionAsMarkdown,
-    title: 'Copy Selection as Markdown',
+    title: browser.i18n.getMessage('contextMenu_selection'),
     type: 'normal',
     contexts: ['selection'],
   });
@@ -230,7 +230,7 @@ function createAllTabsMenus(
   if (builtInStyles.tabLinkList) {
     contextMenusAPI.create({
       id: ContextMenuIds.AllTabsLinkAsList,
-      title: 'Copy All Tabs',
+      title: browser.i18n.getMessage('contextMenu_allTabs'),
       type: 'normal',
       contexts: ['tab'],
     });
@@ -239,7 +239,7 @@ function createAllTabsMenus(
   if (builtInStyles.tabTaskList) {
     contextMenusAPI.create({
       id: ContextMenuIds.AllTabsLinkAsTaskList,
-      title: 'Copy All Tabs (Task List)',
+      title: browser.i18n.getMessage('contextMenu_allTabsTaskList'),
       type: 'normal',
       contexts: ['tab'],
     });
@@ -248,7 +248,7 @@ function createAllTabsMenus(
   if (builtInStyles.tabTitleList) {
     contextMenusAPI.create({
       id: ContextMenuIds.AllTabsTitleAsList,
-      title: 'Copy All Tab Titles',
+      title: browser.i18n.getMessage('contextMenu_allTabsTitles'),
       type: 'normal',
       contexts: ['tab'],
     });
@@ -257,7 +257,7 @@ function createAllTabsMenus(
   if (builtInStyles.tabUrlList) {
     contextMenusAPI.create({
       id: ContextMenuIds.AllTabsUrlAsList,
-      title: 'Copy All Tab URLs',
+      title: browser.i18n.getMessage('contextMenu_allTabsUrls'),
       type: 'normal',
       contexts: ['tab'],
     });
@@ -266,7 +266,7 @@ function createAllTabsMenus(
   for (const format of multipleLinksFormats) {
     contextMenusAPI.create({
       id: `all-tabs-custom-format-${format.slot}`,
-      title: `Copy All Tabs (${format.displayName})`,
+      title: browser.i18n.getMessage('contextMenu_allTabsCustom', format.displayName),
       type: 'normal',
       contexts: ['tab'],
     });
@@ -284,7 +284,7 @@ function createSelectedTabsMenus(
   if (builtInStyles.tabLinkList) {
     contextMenusAPI.create({
       id: ContextMenuIds.HighlightedTabsLinkAsList,
-      title: 'Copy Selected Tabs',
+      title: browser.i18n.getMessage('contextMenu_selectedTabs'),
       type: 'normal',
       contexts: ['tab'],
     });
@@ -293,7 +293,7 @@ function createSelectedTabsMenus(
   if (builtInStyles.tabTaskList) {
     contextMenusAPI.create({
       id: ContextMenuIds.HighlightedTabsLinkAsTaskList,
-      title: 'Copy Selected Tabs (Task List)',
+      title: browser.i18n.getMessage('contextMenu_selectedTabsTaskList'),
       type: 'normal',
       contexts: ['tab'],
     });
@@ -302,7 +302,7 @@ function createSelectedTabsMenus(
   if (builtInStyles.tabTitleList) {
     contextMenusAPI.create({
       id: ContextMenuIds.HighlightedTabsTitleAsList,
-      title: 'Copy Selected Tab Titles',
+      title: browser.i18n.getMessage('contextMenu_selectedTabsTitles'),
       type: 'normal',
       contexts: ['tab'],
     });
@@ -311,7 +311,7 @@ function createSelectedTabsMenus(
   if (builtInStyles.tabUrlList) {
     contextMenusAPI.create({
       id: ContextMenuIds.HighlightedTabsUrlAsList,
-      title: 'Copy Selected Tab URLs',
+      title: browser.i18n.getMessage('contextMenu_selectedTabsUrls'),
       type: 'normal',
       contexts: ['tab'],
     });
@@ -320,7 +320,7 @@ function createSelectedTabsMenus(
   for (const format of multipleLinksFormats) {
     contextMenusAPI.create({
       id: `highlighted-tabs-custom-format-${format.slot}`,
-      title: `Copy Selected Tabs (${format.displayName})`,
+      title: browser.i18n.getMessage('contextMenu_selectedTabsCustom', format.displayName),
       type: 'normal',
       visible: format.showInMenus,
       contexts: ['tab'],
@@ -335,7 +335,7 @@ function createBookmarkMenu(contextMenusAPI: ContextMenusAPI): void {
   try {
     contextMenusAPI.create({
       id: ContextMenuIds.BookmarkLink,
-      title: 'Copy Bookmark or Folder as Markdown',
+      title: browser.i18n.getMessage('contextMenu_bookmark'),
       type: 'normal',
       contexts: ['bookmark'],
     });

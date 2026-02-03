@@ -1,5 +1,6 @@
 import type { BuiltInStyleKey } from '../lib/built-in-style-settings.js';
 import BuiltInStyleSettings from '../lib/built-in-style-settings.js';
+import { localize } from './i18n.js';
 
 function showFlash(message: string): void {
   const flash = document.getElementById('flash-error');
@@ -50,18 +51,19 @@ function wireBuiltInCheckboxes(): void {
     } catch (error) {
       console.error('failed to save built-in menu visibility', error);
       checkbox.checked = !checkbox.checked;
-      showFlash('Failed to save setting. Please try again.');
+      showFlash(browser.i18n.getMessage('options_failedToSave'));
     }
   });
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+  localize();
   try {
     await loadBuiltInCheckboxes();
     wireBuiltInCheckboxes();
     hideFlash();
   } catch (error) {
     console.error('failed to initialize built-in menu visibility', error);
-    showFlash('Failed to load settings. Please refresh.');
+    showFlash(browser.i18n.getMessage('options_failedToLoad'));
   }
 });

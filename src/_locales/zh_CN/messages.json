@@ -1,0 +1,440 @@
+{
+    "extensionName": {
+        "message": "Copy as Markdown"
+    },
+    "extensionDescription": {
+        "message": "将链接或图像复制为 Markdown 格式"
+    },
+    "contextMenu_currentTab": {
+        "message": "将当前页面复制为 Markdown 链接"
+    },
+    "contextMenu_link": {
+        "message": "将链接复制为 Markdown"
+    },
+    "contextMenu_image": {
+        "message": "将图像复制为 Markdown"
+    },
+    "contextMenu_selection": {
+        "message": "将选中文本复制为 Markdown"
+    },
+    "contextMenu_allTabs": {
+        "message": "复制所有标签页"
+    },
+    "contextMenu_allTabsTaskList": {
+        "message": "复制所有标签页 (任务列表)"
+    },
+    "contextMenu_allTabsTitles": {
+        "message": "复制所有标签页标题"
+    },
+    "contextMenu_allTabsUrls": {
+        "message": "复制所有标签页 URL"
+    },
+    "contextMenu_selectedTabs": {
+        "message": "复制选中的标签页"
+    },
+    "contextMenu_selectedTabsTaskList": {
+        "message": "复制选中的标签页 (任务列表)"
+    },
+    "contextMenu_selectedTabsTitles": {
+        "message": "复制选中标签页的标题"
+    },
+    "contextMenu_selectedTabsUrls": {
+        "message": "复制选中标签页的 URL"
+    },
+    "contextMenu_bookmark": {
+        "message": "将书签或文件夹复制为 Markdown"
+    },
+    "contextMenu_currentTabCustom": {
+        "message": "将当前页面复制为 Markdown ($1)"
+    },
+    "contextMenu_linkCustom": {
+        "message": "将链接复制为 Markdown ($1)"
+    },
+    "contextMenu_allTabsCustom": {
+        "message": "复制所有标签页 ($1)"
+    },
+    "contextMenu_selectedTabsCustom": {
+        "message": "复制选中的标签页 ($1)"
+    },
+    "popup_currentTab": {
+        "message": "当前标签页链接"
+    },
+    "popup_allTabs": {
+        "message": "所有标签页链接 ($COUNT$)",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "popup_allTabsTaskList": {
+        "message": "所有标签页链接 (任务列表)"
+    },
+    "popup_allTabsTitles": {
+        "message": "所有标签页标题"
+    },
+    "popup_allTabsUrls": {
+        "message": "所有标签页 URL"
+    },
+    "popup_selectedTabs": {
+        "message": "选中标签页链接 ($COUNT$)",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "popup_selectedTabsTaskList": {
+        "message": "选中标签页链接 (任务列表)"
+    },
+    "popup_selectedTabsTitles": {
+        "message": "选中标签页标题"
+    },
+    "popup_selectedTabsUrls": {
+        "message": "选中标签页 URL"
+    },
+    "popup_options": {
+        "message": "选项..."
+    },
+    "popup_failedToCopy": {
+        "message": "无法复制到剪贴板，请重试。"
+    },
+    "popup_failedToLoad": {
+        "message": "加载标签页或设置失败，请重新打开弹出窗口。"
+    },
+    "popup_currentTabCustom": {
+        "message": "当前标签页 ($1)"
+    },
+    "options_title": {
+        "message": "Markdown 样式"
+    },
+    "options_general": {
+        "message": "常规"
+    },
+    "options_permissions": {
+        "message": "权限"
+    },
+    "options_formats": {
+        "message": "自定义格式"
+    },
+    "options_multipleLinks": {
+        "message": "多链接"
+    },
+    "options_singleLink": {
+        "message": "单链接"
+    },
+    "options_others": {
+        "message": "其他"
+    },
+    "options_help": {
+        "message": "帮助与示例"
+    },
+    "options_about": {
+        "message": "关于"
+    },
+    "options_listStyle": {
+        "message": "无序列表项目符号"
+    },
+    "options_dash": {
+        "message": "连字符 (-)"
+    },
+    "options_asterisk": {
+        "message": "星号 (*)"
+    },
+    "options_plus": {
+        "message": "加号 (+)"
+    },
+    "options_indentation": {
+        "message": "标签页组缩进"
+    },
+    "options_requiresPermission": {
+        "message": "需要权限"
+    },
+    "options_spaces": {
+        "message": "空格"
+    },
+    "options_tab": {
+        "message": "制表符 (Tab)"
+    },
+    "options_escaping": {
+        "message": "转义"
+    },
+    "options_escapeBrackets": {
+        "message": "始终转义链接文本中的方括号 (将 [] 转换为 \\[\\])"
+    },
+    "options_reset": {
+        "message": "恢复默认设置"
+    },
+    "options_failedToLoad": {
+        "message": "加载设置失败，请重试。"
+    },
+    "options_failedToSave": {
+        "message": "保存设置失败，请重试。"
+    },
+    "options_resetFailed": {
+        "message": "重置设置失败，请重试。"
+    },
+    "command_selectionAsMarkdown": {
+        "message": "复制选中文本为 Markdown"
+    },
+    "command_currentTabLink": {
+        "message": "复制当前标签页链接"
+    },
+    "command_currentTabCustom1": {
+        "message": "当前标签页：自定义格式 1"
+    },
+    "command_currentTabCustom2": {
+        "message": "当前标签页：自定义格式 2"
+    },
+    "command_currentTabCustom3": {
+        "message": "当前标签页：自定义格式 3"
+    },
+    "command_currentTabCustom4": {
+        "message": "当前标签页：自定义格式 4"
+    },
+    "command_currentTabCustom5": {
+        "message": "当前标签页：自定义格式 5"
+    },
+    "command_allTabsLinkAsList": {
+        "message": "所有标签页：链接列表"
+    },
+    "command_allTabsLinkAsTaskList": {
+        "message": "所有标签页：任务列表"
+    },
+    "command_allTabsTitleAsList": {
+        "message": "所有标签页：标题列表"
+    },
+    "command_allTabsUrlAsList": {
+        "message": "所有标签页：URL 列表"
+    },
+    "command_selectedTabsLinkAsList": {
+        "message": "选中标签页：链接列表"
+    },
+    "command_selectedTabsLinkAsTaskList": {
+        "message": "选中标签页：任务列表"
+    },
+    "command_selectedTabsTitleAsList": {
+        "message": "选中标签页：标题列表"
+    },
+    "command_selectedTabsUrlAsList": {
+        "message": "选中标签页：URL 列表"
+    },
+    "command_allTabsCustom1": {
+        "message": "所有标签页：自定义格式 1"
+    },
+    "command_allTabsCustom2": {
+        "message": "所有标签页：自定义格式 2"
+    },
+    "command_allTabsCustom3": {
+        "message": "所有标签页：自定义格式 3"
+    },
+    "command_allTabsCustom4": {
+        "message": "所有标签页：自定义格式 4"
+    },
+    "command_allTabsCustom5": {
+        "message": "所有标签页：自定义格式 5"
+    },
+    "command_selectedTabsCustom1": {
+        "message": "选中标签页：自定义格式 1"
+    },
+    "command_selectedTabsCustom2": {
+        "message": "选中标签页：自定义格式 2"
+    },
+    "command_selectedTabsCustom3": {
+        "message": "选中标签页：自定义格式 3"
+    },
+    "command_selectedTabsCustom4": {
+        "message": "选中标签页：自定义格式 4"
+    },
+    "command_selectedTabsCustom5": {
+        "message": "选中标签页：自定义格式 5"
+    },
+    "help_title": {
+        "message": "自定义格式帮助"
+    },
+    "help_mustacheNote": {
+        "message": "使用 Mustache 模板语言编写模板。"
+    },
+    "help_multipleTabs": {
+        "message": "多个标签页"
+    },
+    "help_inputObjectDesc": {
+        "message": "输入对象包含 2 个属性：$L$ 用于扁平化的链接列表，$G$ 用于按标签页组归类的链接（仅限支持的浏览器）。",
+        "placeholders": {
+            "l": {
+                "content": "$1"
+            },
+            "g": {
+                "content": "$2"
+            }
+        }
+    },
+    "help_groupOrderNote": {
+        "message": "标签页组按原始顺序显示。属于某个组的标签页将汇总到带有 $A$ 属性的条目中。标签页出现在其嵌套的 $L$ 数组中。不属于任何组的标签页将显示在顶层。",
+        "placeholders": {
+            "a": {
+                "content": "$1"
+            },
+            "l": {
+                "content": "$2"
+            }
+        }
+    },
+    "help_loopNote": {
+        "message": "在循环中，使用 $I$ 获取从 0 开始的索引，使用 $N$ 获取从 1 开始的编号。",
+        "placeholders": {
+            "i": {
+                "content": "$1"
+            },
+            "n": {
+                "content": "$2"
+            }
+        }
+    },
+    "help_exampleGrouping": {
+        "message": "示例输入：不带分组的链接列表"
+    },
+    "help_exampleGroupingWith": {
+        "message": "示例输入：带分组的链接列表"
+    },
+    "help_groupANote": {
+        "message": "假设标签页 2 和 3 被归入“组 A”，而标签页 1 和 4 不在任何组中："
+    },
+    "help_exampleTemplates": {
+        "message": "模板示例"
+    },
+    "help_wikiNote": {
+        "message": "更多示例请参考 $1。"
+    },
+    "help_refStyle": {
+        "message": "引用样式"
+    },
+    "help_groupOrdered": {
+        "message": "按组排序列表"
+    },
+    "help_template": {
+        "message": "模板："
+    },
+    "help_output": {
+        "message": "输出："
+    },
+    "help_useNumber": {
+        "message": "使用 $1 获取以 1 开始的当前索引"
+    },
+    "about_title": {
+        "message": "关于"
+    },
+    "about_homepage": {
+        "message": "主页: $URL$",
+        "placeholders": {
+            "url": {
+                "content": "$1"
+            }
+        }
+    },
+    "about_license": {
+        "message": "授权协议"
+    },
+    "about_thirdParty": {
+        "message": "第三方开源协议"
+    },
+    "permissions_title": {
+        "message": "附加权限"
+    },
+    "permissions_desc": {
+        "message": "某些功能需要附加权限。如果未授予权限，将会出现提示。"
+    },
+    "permissions_tabs": {
+        "message": "标签页"
+    },
+    "permissions_tabsDesc": {
+        "message": "通过弹出菜单和快捷键复制所有/选中的标签页。此外，还支持标签页上的右键菜单（仅限 Firefox）。"
+    },
+    "permissions_tabGroups": {
+        "message": "标签页组"
+    },
+    "permissions_tabGroupsDesc": {
+        "message": "将标签页按标签页组归类。需要先授予上方的“标签页”权限。"
+    },
+    "permissions_bookmarks": {
+        "message": "书签"
+    },
+    "permissions_bookmarksDesc": {
+        "message": "启用书签上的右键菜单（仅限 Firefox）。"
+    },
+    "permissions_grant": {
+        "message": "授予 $1 权限"
+    },
+    "permissions_revoke": {
+        "message": "撤销 $1 权限"
+    },
+    "permissions_revokeAll": {
+        "message": "全部撤销"
+    },
+    "permissions_notGranted": {
+        "message": "未授予"
+    },
+    "formats_multipleLinks_title": {
+        "message": "格式 - 多链接"
+    },
+    "formats_singleLink_title": {
+        "message": "格式 - 单链接"
+    },
+    "formats_menuCommands": {
+        "message": "菜单中的命令"
+    },
+    "formats_menuCommandsDesc": {
+        "message": "选择要在弹出菜单和右键菜单中显示的项目。"
+    },
+    "formats_menuCommandsHelp": {
+        "message": "禁用内置样式可以隐藏弹出窗口中的默认标签页导出命令。在 Firefox 上，这些选项也会反映在标签页的右键菜单中。"
+    },
+    "formats_builtin_list": {
+        "message": "内置：将标签页链接复制为列表"
+    },
+    "formats_builtin_taskList": {
+        "message": "内置：将标签页链接复制为任务列表"
+    },
+    "formats_builtin_title": {
+        "message": "内置：复制标签页标题"
+    },
+    "formats_builtin_url": {
+        "message": "内置：复制标签页 URL"
+    },
+    "formats_builtin_single": {
+        "message": "内置：复制当前页面链接"
+    },
+    "formats_singleLink_help": {
+        "message": "关闭默认的页面/链接选项"
+    },
+    "formats_customFormatX": {
+        "message": "复制为自定义格式 $1"
+    },
+    "customFormat_defaultName": {
+        "message": "自定义格式 $1"
+    },
+    "customFormat_display": {
+        "message": "显示"
+    },
+    "customFormat_showInPopup": {
+        "message": "在弹出菜单中显示"
+    },
+    "customFormat_displayName": {
+        "message": "菜单显示名称"
+    },
+    "customFormat_template": {
+        "message": "模板"
+    },
+    "customFormat_invalidTemplate": {
+        "message": "模板语法错误"
+    },
+    "customFormat_input": {
+        "message": "输入"
+    },
+    "customFormat_preview": {
+        "message": "预览"
+    },
+    "customFormat_save": {
+        "message": "保存"
+    }
+}

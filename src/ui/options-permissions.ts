@@ -1,6 +1,7 @@
 import Settings from '../lib/settings.js';
 import type { PermissionStatus } from './permissions-ui.js';
 import { hideUiIfPermissionsNotGranted, loadPermissions, PermissionStatusValue } from './permissions-ui.js';
+import { localize } from './i18n.js';
 
 let permissionStatuses: PermissionStatus = new Map();
 
@@ -48,6 +49,7 @@ function refreshUi(): void {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+  localize();
   await reloadPermissions();
   refreshUi();
 });

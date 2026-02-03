@@ -3,6 +3,7 @@ import type { ExportFormat, ExportScope, ListType } from '../services/tab-export
 import CustomFormatsStorage from '../storage/custom-formats-storage.js';
 import type { BuiltInStyleSettings } from '../lib/built-in-style-settings.js';
 import BuiltInStyleSettingsStorage from '../lib/built-in-style-settings.js';
+import { localize } from './i18n.js';
 
 interface MessageResponse {
   ok: boolean;
@@ -17,8 +18,6 @@ const keepOpen = URL_PARAMS.has('keep_open');
 let useMockClipboard = false;
 let ready = false;
 
-const displayCountOfAllTabs = document.getElementById('display-count-all-tabs');
-const displayCountOfHighlightedTabs = document.getElementById('display-count-highlighted-tabs');
 const actionsExportAll = document.getElementById('actions-export-all') as HTMLDivElement | null;
 const actionsExportHighlighted = document.getElementById('actions-export-highlighted') as HTMLDivElement | null;
 const actionsExportCurrent = document.getElementById('actions-export-current-tab') as HTMLDivElement | null;
@@ -148,7 +147,7 @@ async function performExport(message: RuntimeMessage): Promise<void> {
     if (isTabsPermissionError(error)) {
       return;
     }
-    showFlash('Failed to copy to clipboard. Please try again.');
+    showFlash(browser.i18n.getMessage('popup_failedToCopy'));
   }
 }
 
@@ -263,14 +262,14 @@ async function loadCustomFormats(): Promise<void> {
     .forEach((customFormat) => {
       const btnAll = createCustomButton({
         id: `all-tabs-custom-format-${customFormat.slot}`,
-        label: `All tabs (${customFormat.displayName})`,
+        label: browser.i18n.getMessage('popup_allTabs', customFormat.displayName),
         onClick: () => exportTabsCustomFormat('all', customFormat.slot),
       });
       actionsExportAll.appendChild(btnAll);
 
       const btnHighlighted = createCustomButton({
         id: `highlighted-tabs-custom-format-${customFormat.slot}`,
-        label: `Selected tabs (${customFormat.displayName})`,
+        label: browser.i18n.getMessage('popup_selectedTabs', customFormat.displayName),
         onClick: () => exportTabsCustomFormat('highlighted', customFormat.slot),
       });
       actionsExportHighlighted.appendChild(btnHighlighted);
@@ -281,7 +280,7 @@ async function loadCustomFormats(): Promise<void> {
     .forEach((customFormat) => {
       const btn = createCustomButton({
         id: `current-tab-custom-format-${customFormat.slot}`,
-        label: `Current tab (${customFormat.displayName})`,
+        label: browser.i18n.getMessage('popup_currentTabCustom', customFormat.displayName),
         onClick: () => exportCurrentTab('custom-format', customFormat.slot),
       });
       actionsExportCurrent.appendChild(btn);
@@ -323,11 +322,13 @@ function wireStaticButtons(): void {
 }
 
 function setCounts(tabsCount: number, highlightedCount: number): void {
-  if (displayCountOfAllTabs) {
-    displayCountOfAllTabs.textContent = String(tabsCount);
+  const allTabsBtn = document.getElementById('all-tabs-link-as-list');
+  if (allTabsBtn) {
+    allTabsBtn.textContent = browser.i18n.getMessage('popup_allTabs', String(tabsCount));
   }
-  if (displayCountOfHighlightedTabs) {
-    displayCountOfHighlightedTabs.textContent = String(highlightedCount);
+  const highlightedBtn = document.getElementById('highlighted-tabs-link-as-list');
+  if (highlightedBtn) {
+    highlightedBtn.textContent = browser.i18n.getMessage('popup_selectedTabs', String(highlightedCount));
   }
 }
 
@@ -376,9 +377,11 @@ document.addEventListener('DOMContentLoaded', () => {
       hideFlash();
     } catch (error) {
       console.error('Failed to initialize popup', error);
-      showFlash('Failed to load tabs or settings. Please reopen the popup.');
+      showFlash(browser.i18n.getMessage('popup_failedToLoad'));
     }
   })();
+
+  localize();
 
   // expose for tests
   (window as any).__popupReady = initPromise;

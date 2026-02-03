@@ -1,59 +1,74 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Copy as Markdown - About</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="../vendor/bulma.css">
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-<div class="container section is-max-desktop">
-  <h1 class="title">Copy as Markdown</h1>
-  <div id="flash-error" class="notification is-danger is-hidden">
-    <p></p>
-  </div>
-  <div class="columns">
-    <div class="column is-narrow" id="menu">
-      <aside class="menu">
-        <p class="menu-label">General</p>
-        <ul class="menu-list">
-          <li><a href="options.html">Markdown Style</a></li>
-          <li><a href="options-permissions.html">Permissions</a></li>
-          <p class="menu-label">Formats</p>
-          <li>
-            <a href="multiple-links.html">Multiple Links</a>
-            <ul class="menu-list" data-menu-custom-format-context="multiple-links">
-              <li><a data-menu-custom-format-slot="1" href="custom-format.html?context=multiple-links&slot=1">Custom Format 1</a></li>
-              <li><a data-menu-custom-format-slot="2" href="custom-format.html?context=multiple-links&slot=2">Custom Format 2</a></li>
-              <li><a data-menu-custom-format-slot="3" href="custom-format.html?context=multiple-links&slot=3">Custom Format 3</a></li>
-              <li><a data-menu-custom-format-slot="4" href="custom-format.html?context=multiple-links&slot=4">Custom Format 4</a></li>
-              <li><a data-menu-custom-format-slot="5" href="custom-format.html?context=multiple-links&slot=5">Custom Format 5</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="single-link.html">Single Link</a>
-            <ul class="menu-list" data-menu-custom-format-context="single-link">
-              <li><a data-menu-custom-format-slot="1" href="custom-format.html?context=single-link&slot=1">Custom Format 1</a></li>
-              <li><a data-menu-custom-format-slot="2" href="custom-format.html?context=single-link&slot=2">Custom Format 2</a></li>
-              <li><a data-menu-custom-format-slot="3" href="custom-format.html?context=single-link&slot=3">Custom Format 3</a></li>
-              <li><a data-menu-custom-format-slot="4" href="custom-format.html?context=single-link&slot=4">Custom Format 4</a></li>
-              <li><a data-menu-custom-format-slot="5" href="custom-format.html?context=single-link&slot=5">Custom Format 5</a></li>
-            </ul>
-          </li>
-        </ul>
-        <p class="menu-label">Others</p>
-        <ul class="menu-list">
-          <li><a href="custom-format-help.html">Help & Examples</a></li>
-          <li><a class="is-active" href="about.html">About</a></li>
-        </ul>
-      </aside>
-    </div>
-    <div class="column">
-      <div class="box content">
-<h2>About</h2>
-<p>Homepage: <a href="https://github.com/yorkxin/copy-as-markdown">https://github.com/yorkxin/copy-as-markdown</a></p>
 
-<details><summary>License</summary><pre class="is-overflow-x-scroll">
+<body>
+  <div class="container section is-max-desktop">
+    <h1 class="title">Copy as Markdown</h1>
+    <div id="flash-error" class="notification is-danger is-hidden">
+      <p></p>
+    </div>
+    <div class="columns">
+      <div class="column is-narrow" id="menu">
+        <aside class="menu">
+          <p class="menu-label" data-i18n="options_general">General</p>
+          <ul class="menu-list">
+            <li><a href="options.html" data-i18n="options_title">Markdown Style</a></li>
+            <li><a href="options-permissions.html" data-i18n="options_permissions">Permissions</a></li>
+            <p class="menu-label" data-i18n="options_formats">Formats</p>
+            <li>
+              <a href="multiple-links.html" data-i18n="options_multipleLinks">Multiple Links</a>
+              <ul class="menu-list" data-menu-custom-format-context="multiple-links">
+                <li><a data-menu-custom-format-slot="1" href="custom-format.html?context=multiple-links&slot=1">Custom
+                    Format 1</a></li>
+                <li><a data-menu-custom-format-slot="2" href="custom-format.html?context=multiple-links&slot=2">Custom
+                    Format 2</a></li>
+                <li><a data-menu-custom-format-slot="3" href="custom-format.html?context=multiple-links&slot=3">Custom
+                    Format 3</a></li>
+                <li><a data-menu-custom-format-slot="4" href="custom-format.html?context=multiple-links&slot=4">Custom
+                    Format 4</a></li>
+                <li><a data-menu-custom-format-slot="5" href="custom-format.html?context=multiple-links&slot=5">Custom
+                    Format 5</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="single-link.html" data-i18n="options_singleLink">Single Link</a>
+              <ul class="menu-list" data-menu-custom-format-context="single-link">
+                <li><a data-menu-custom-format-slot="1" href="custom-format.html?context=single-link&slot=1">Custom
+                    Format 1</a></li>
+                <li><a data-menu-custom-format-slot="2" href="custom-format.html?context=single-link&slot=2">Custom
+                    Format 2</a></li>
+                <li><a data-menu-custom-format-slot="3" href="custom-format.html?context=single-link&slot=3">Custom
+                    Format 3</a></li>
+                <li><a data-menu-custom-format-slot="4" href="custom-format.html?context=single-link&slot=4">Custom
+                    Format 4</a></li>
+                <li><a data-menu-custom-format-slot="5" href="custom-format.html?context=single-link&slot=5">Custom
+                    Format 5</a></li>
+              </ul>
+            </li>
+          </ul>
+          <p class="menu-label" data-i18n="options_others">Others</p>
+          <ul class="menu-list">
+            <li><a href="custom-format-help.html" data-i18n="options_help">Help & Examples</a></li>
+            <li><a class="is-active" href="about.html" data-i18n="options_about">About</a></li>
+          </ul>
+        </aside>
+      </div>
+      <div class="column">
+        <div class="box content">
+          <h2 data-i18n="about_title">About</h2>
+          <p data-i18n="about_homepage" data-i18n-args="https://github.com/yorkxin/copy-as-markdown">Homepage: <a
+              href="https://github.com/yorkxin/copy-as-markdown">https://github.com/yorkxin/copy-as-markdown</a></p>
+
+          <details>
+            <summary data-i18n="about_license">License</summary>
+            <pre class="is-overflow-x-scroll">
 The MIT License
 
 Copyright (c) 2012-2024 Yu-Cheng Chuang
@@ -63,14 +78,17 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-</pre></details>
+</pre>
+          </details>
 
-<h2>Third-Party Licenses</h2>
+          <h2 data-i18n="about_thirdParty">Third-Party Licenses</h2>
 
-<h3>Bulma</h3>
-<p>Homepage: <a href="https://github.com/jgthms/bulma">https://github.com/jgthms/bulma</a></p>
+          <h3>Bulma</h3>
+          <p>Homepage: <a href="https://github.com/jgthms/bulma">https://github.com/jgthms/bulma</a></p>
 
-<details><summary>License</summary><pre class="is-overflow-x-scroll">
+          <details>
+            <summary data-i18n="about_license">License</summary>
+            <pre class="is-overflow-x-scroll">
 The MIT License (MIT)
 
 Copyright (c) 2023 Jeremy Thomas
@@ -92,11 +110,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-</pre></details>
+</pre>
+          </details>
 
-<h3>Turndown.js</h3>
-<p>Homepage: <a href="https://github.com/mixmark-io/turndown">https://github.com/mixmark-io/turndown</a> </p>
-<details><summary>License</summary><pre class="is-overflow-x-scroll">
+          <h3>Turndown.js</h3>
+          <p>Homepage: <a href="https://github.com/mixmark-io/turndown">https://github.com/mixmark-io/turndown</a> </p>
+          <details>
+            <summary data-i18n="about_license">License</summary>
+            <pre class="is-overflow-x-scroll">
 MIT License
 
 Copyright (c) 2017 Dom Christie
@@ -118,11 +139,16 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-</pre></details>
+</pre>
+          </details>
 
-<h3>turndown-plugin-gfm</h3>
-<p>Homepage: <a href="https://github.com/trutohq/turndown-plugin-gfm">https://github.com/trutohq/turndown-plugin-gfm</a></p>
-<details><summary>License</summary><pre>
+          <h3>turndown-plugin-gfm</h3>
+          <p>Homepage: <a
+              href="https://github.com/trutohq/turndown-plugin-gfm">https://github.com/trutohq/turndown-plugin-gfm</a>
+          </p>
+          <details>
+            <summary data-i18n="about_license">License</summary>
+            <pre>
 MIT License
 
 Copyright (c) 2025 Truto
@@ -144,13 +170,18 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
-</pre></details>
+</pre>
+          </details>
 
-<h3>browser-polyfill.js (webextension-polyfill)</h3>
+          <h3>browser-polyfill.js (webextension-polyfill)</h3>
 
-<p>Homepage: <a href="https://github.com/mozilla/webextension-polyfill">https://github.com/mozilla/webextension-polyfill</a></p>
+          <p>Homepage: <a
+              href="https://github.com/mozilla/webextension-polyfill">https://github.com/mozilla/webextension-polyfill</a>
+          </p>
 
-<details><summary>License</summary><pre class="is-overflow-x-scroll">
+          <details>
+            <summary data-i18n="about_license">License</summary>
+            <pre class="is-overflow-x-scroll">
 Mozilla Public License Version 2.0
 ==================================
 
@@ -524,11 +555,14 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
 
 This Source Code Form is "Incompatible With Secondary Licenses", as
 defined by the Mozilla Public License, v. 2.0.
-</pre></details>
+</pre>
+          </details>
 
-<h3>mustache.js</h3>
-<p>Homepage: <a href="https://github.com/janl/mustache.js">https://github.com/janl/mustache.js</a> </p>
-<details><summary>License</summary><pre class="is-overflow-x-scroll">
+          <h3>mustache.js</h3>
+          <p>Homepage: <a href="https://github.com/janl/mustache.js">https://github.com/janl/mustache.js</a> </p>
+          <details>
+            <summary data-i18n="about_license">License</summary>
+            <pre class="is-overflow-x-scroll">
 The MIT License
 
 Copyright (c) 2009 Chris Wanstrath (Ruby)
@@ -540,8 +574,13 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-</pre></details>
-</div></div></div></div>
-<script src="./options-ui.js" type="module"></script>
+</pre>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./options-ui.js" type="module"></script>
 </body>
+
 </html>

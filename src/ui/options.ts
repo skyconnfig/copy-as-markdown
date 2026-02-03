@@ -2,6 +2,7 @@ import type { TabGroupIndentationStyle, UnorderedListStyle } from '../lib/markdo
 import Settings from '../lib/settings.js';
 import type { PermissionStatus } from './permissions-ui.js';
 import { disableUiIfPermissionsNotGranted, hideUiIfPermissionsNotGranted, loadPermissions } from './permissions-ui.js';
+import { localize } from './i18n.js';
 
 function showFlash(message: string): void {
   const flash = document.getElementById('flash-error');
@@ -45,11 +46,12 @@ async function loadSettings(): Promise<void> {
     hideFlash();
   } catch (error) {
     console.error('error getting settings', error);
-    showFlash('Failed to load settings. Please try again.');
+    showFlash(browser.i18n.getMessage('options_failedToLoad'));
   }
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+  localize();
   await loadSettings();
   const statuses = await loadPermissions();
   hideUiIfPermissionsNotGranted(statuses);
@@ -65,7 +67,7 @@ if (formEscapeBrackets) {
       hideFlash();
     } catch (error) {
       console.error('failed to save settings:', error);
-      showFlash('Failed to save setting. Please try again.');
+      showFlash(browser.i18n.getMessage('options_failedToSave'));
     }
   });
 }
@@ -79,7 +81,7 @@ if (formTabGroupIndentation) {
       hideFlash();
     } catch (error) {
       console.error('failed to save settings:', error);
-      showFlash('Failed to save setting. Please try again.');
+      showFlash(browser.i18n.getMessage('options_failedToSave'));
     }
   });
 }
@@ -93,7 +95,7 @@ if (formUnorderedList) {
       hideFlash();
     } catch (error) {
       console.error('failed to save settings:', error);
-      showFlash('Failed to save setting. Please try again.');
+      showFlash(browser.i18n.getMessage('options_failedToSave'));
     }
   });
 }
@@ -107,7 +109,7 @@ if (resetButton) {
       hideFlash();
     } catch (error) {
       console.error('failed to reset settings:', error);
-      showFlash('Failed to reset settings. Please try again.');
+      showFlash(browser.i18n.getMessage('options_resetFailed'));
     }
   });
 }

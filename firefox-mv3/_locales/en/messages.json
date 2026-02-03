@@ -1,0 +1,430 @@
+{
+    "extensionName": {
+        "message": "Copy as Markdown"
+    },
+    "extensionDescription": {
+        "message": "Copy Link or Image as Markdown code"
+    },
+    "contextMenu_currentTab": {
+        "message": "Copy Page Link as Markdown"
+    },
+    "contextMenu_link": {
+        "message": "Copy Link as Markdown"
+    },
+    "contextMenu_image": {
+        "message": "Copy Image as Markdown"
+    },
+    "contextMenu_selection": {
+        "message": "Copy Selection as Markdown"
+    },
+    "contextMenu_allTabs": {
+        "message": "Copy All Tabs"
+    },
+    "contextMenu_allTabsTaskList": {
+        "message": "Copy All Tabs (Task List)"
+    },
+    "contextMenu_allTabsTitles": {
+        "message": "Copy All Tab Titles"
+    },
+    "contextMenu_allTabsUrls": {
+        "message": "Copy All Tab URLs"
+    },
+    "contextMenu_selectedTabs": {
+        "message": "Copy Selected Tabs"
+    },
+    "contextMenu_selectedTabsTaskList": {
+        "message": "Copy Selected Tabs (Task List)"
+    },
+    "contextMenu_selectedTabsTitles": {
+        "message": "Copy Selected Tab Titles"
+    },
+    "contextMenu_selectedTabsUrls": {
+        "message": "Copy Selected Tab URLs"
+    },
+    "contextMenu_bookmark": {
+        "message": "Copy Bookmark or Folder as Markdown"
+    },
+    "contextMenu_currentTabCustom": {
+        "message": "Copy Page Link ($1)"
+    },
+    "contextMenu_linkCustom": {
+        "message": "Copy Link ($1)"
+    },
+    "contextMenu_allTabsCustom": {
+        "message": "Copy All Tabs ($1)"
+    },
+    "contextMenu_selectedTabsCustom": {
+        "message": "Copy Selected Tabs ($1)"
+    },
+    "popup_currentTab": {
+        "message": "Current tab link"
+    },
+    "popup_allTabs": {
+        "message": "All tabs link ($COUNT$)",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "popup_allTabsTaskList": {
+        "message": "All tabs link (task list)"
+    },
+    "popup_allTabsTitles": {
+        "message": "All tabs title"
+    },
+    "popup_allTabsUrls": {
+        "message": "All tabs URL"
+    },
+    "popup_selectedTabs": {
+        "message": "Selected tabs link ($COUNT$)",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "popup_selectedTabsTaskList": {
+        "message": "Selected tabs link (task list)"
+    },
+    "popup_selectedTabsTitles": {
+        "message": "Selected tabs title"
+    },
+    "popup_selectedTabsUrls": {
+        "message": "Selected tabs URL"
+    },
+    "popup_options": {
+        "message": "Options..."
+    },
+    "popup_failedToCopy": {
+        "message": "Failed to copy to clipboard. Please try again."
+    },
+    "popup_failedToLoad": {
+        "message": "Failed to load tabs or settings. Please reopen the popup."
+    },
+    "popup_currentTabCustom": {
+        "message": "Current tab ($1)"
+    },
+    "options_title": {
+        "message": "Markdown Style"
+    },
+    "options_general": {
+        "message": "General"
+    },
+    "options_permissions": {
+        "message": "Permissions"
+    },
+    "options_formats": {
+        "message": "Formats"
+    },
+    "options_multipleLinks": {
+        "message": "Multiple Links"
+    },
+    "options_singleLink": {
+        "message": "Single Link"
+    },
+    "options_others": {
+        "message": "Others"
+    },
+    "options_help": {
+        "message": "Help & Examples"
+    },
+    "options_about": {
+        "message": "About"
+    },
+    "options_listStyle": {
+        "message": "Unordered List Character"
+    },
+    "options_dash": {
+        "message": "Dashes (-)"
+    },
+    "options_asterisk": {
+        "message": "Asterisks (*)"
+    },
+    "options_plus": {
+        "message": "Plus Signs (+)"
+    },
+    "options_indentation": {
+        "message": "Tab Group Indentation"
+    },
+    "options_requiresPermission": {
+        "message": "Requires Permission"
+    },
+    "options_spaces": {
+        "message": "Spaces"
+    },
+    "options_tab": {
+        "message": "Tab"
+    },
+    "options_escaping": {
+        "message": "Escaping"
+    },
+    "options_escapeBrackets": {
+        "message": "Always escape brackets in link text ([] becomes \\[\\])"
+    },
+    "options_reset": {
+        "message": "Restore to Default"
+    },
+    "options_failedToLoad": {
+        "message": "Failed to load settings. Please try again."
+    },
+    "options_failedToSave": {
+        "message": "Failed to save setting. Please try again."
+    },
+    "options_resetFailed": {
+        "message": "Failed to reset settings. Please try again."
+    },
+    "command_selectionAsMarkdown": {
+        "message": "Copy Selection as Markdown"
+    },
+    "command_currentTabLink": {
+        "message": "Copy Current Tab Link"
+    },
+    "command_currentTabCustom1": {
+        "message": "Current Tab: Custom Format 1"
+    },
+    "command_currentTabCustom2": {
+        "message": "Current Tab: Custom Format 2"
+    },
+    "command_currentTabCustom3": {
+        "message": "Current Tab: Custom Format 3"
+    },
+    "command_currentTabCustom4": {
+        "message": "Current Tab: Custom Format 4"
+    },
+    "command_currentTabCustom5": {
+        "message": "Current Tab: Custom Format 5"
+    },
+    "command_allTabsLinkAsList": {
+        "message": "All Tabs: Link List"
+    },
+    "command_allTabsLinkAsTaskList": {
+        "message": "All Tabs: Task List"
+    },
+    "command_allTabsTitleAsList": {
+        "message": "All Tabs: Title List"
+    },
+    "command_allTabsUrlAsList": {
+        "message": "All Tabs: URL List"
+    },
+    "command_selectedTabsLinkAsList": {
+        "message": "Selected Tabs: Link List"
+    },
+    "command_selectedTabsLinkAsTaskList": {
+        "message": "Selected Tabs: Task List"
+    },
+    "command_selectedTabsTitleAsList": {
+        "message": "Selected Tabs: Title List"
+    },
+    "command_selectedTabsUrlAsList": {
+        "message": "Selected Tabs: URL List"
+    },
+    "command_allTabsCustom1": {
+        "message": "All Tabs: Custom Format 1"
+    },
+    "command_allTabsCustom2": {
+        "message": "All Tabs: Custom Format 2"
+    },
+    "command_allTabsCustom3": {
+        "message": "All Tabs: Custom Format 3"
+    },
+    "command_allTabsCustom4": {
+        "message": "All Tabs: Custom Format 4"
+    },
+    "command_allTabsCustom5": {
+        "message": "All Tabs: Custom Format 5"
+    },
+    "command_selectedTabsCustom1": {
+        "message": "Selected Tabs: Custom Format 1"
+    },
+    "command_selectedTabsCustom2": {
+        "message": "Selected Tabs: Custom Format 2"
+    },
+    "command_selectedTabsCustom3": {
+        "message": "Selected Tabs: Custom Format 3"
+    },
+    "command_selectedTabsCustom4": {
+        "message": "Selected Tabs: Custom Format 4"
+    },
+    "command_selectedTabsCustom5": {
+        "message": "Selected Tabs: Custom Format 5"
+    },
+    "help_title": {
+        "message": "Custom Format Help"
+    },
+    "help_mustacheNote": {
+        "message": "Write the template in the Mustache template language."
+    },
+    "help_multipleTabs": {
+        "message": "Multiple Tabs"
+    },
+    "help_inputObjectDesc": {
+        "message": "The input object contains 2 attributes: $L$ for flattened links, and $G$ for links grouped in Tab Groups (supported browsers only).",
+        "placeholders": {
+            "l": {
+                "content": "$1"
+            },
+            "g": {
+                "content": "$2"
+            }
+        }
+    },
+    "help_groupOrderNote": {
+        "message": "Tab Groups appear in its original order. For tabs that belong to a Tab Group, they will be gathered in an entry with $A$ attribute. The tabs appear in its nested $L$ array. For tabs that do not belong to any Tab Group, they will appear at the top level.",
+        "placeholders": {
+            "a": {
+                "content": "$1"
+            },
+            "l": {
+                "content": "$2"
+            }
+        }
+    },
+    "help_loopNote": {
+        "message": "In loops, use $I$ for 0-based indexes, and $N$ for 1-based indexes.",
+        "placeholders": {
+            "i": {
+                "content": "$1"
+            },
+            "n": {
+                "content": "$2"
+            }
+        }
+    },
+    "help_exampleGrouping": {
+        "message": "Example Input: List of links without grouping"
+    },
+    "help_exampleGroupingWith": {
+        "message": "Example Input: List of links with grouping"
+    },
+    "help_groupANote": {
+        "message": "Suppose tab 2 and 3 are grouped in Group A, but tab 1 and 4 are not in any group:"
+    },
+    "help_exampleTemplates": {
+        "message": "Example Templates"
+    },
+    "help_wikiNote": {
+        "message": "For more examples, check out $W$.",
+        "placeholders": {
+            "w": {
+                "content": "$1"
+            }
+        }
+    },
+    "about_title": {
+        "message": "About"
+    },
+    "about_homepage": {
+        "message": "Homepage: $URL$",
+        "placeholders": {
+            "url": {
+                "content": "$1"
+            }
+        }
+    },
+    "about_license": {
+        "message": "License"
+    },
+    "about_thirdParty": {
+        "message": "Third-Party Licenses"
+    },
+    "permissions_title": {
+        "message": "Additional Permissions"
+    },
+    "permissions_desc": {
+        "message": "Some features require additional permissions. Prompts will appear when permissions are not granted."
+    },
+    "permissions_tabs": {
+        "message": "Tabs"
+    },
+    "permissions_tabsDesc": {
+        "message": "Copy all / selected tabs via the popup menu and shortcut keys. Also, via context menus on tabs (Firefox-only)."
+    },
+    "permissions_tabGroups": {
+        "message": "Tab Groups"
+    },
+    "permissions_tabGroupsDesc": {
+        "message": "Wrap tabs in your tab groups. Need to grant Tabs permission above."
+    },
+    "permissions_bookmarks": {
+        "message": "Bookmarks"
+    },
+    "permissions_bookmarksDesc": {
+        "message": "Enable context menus on bookmarks (Firefox-only)."
+    },
+    "permissions_grant": {
+        "message": "Grant $1 Permission"
+    },
+    "permissions_revoke": {
+        "message": "Revoke $1 Permission"
+    },
+    "permissions_revokeAll": {
+        "message": "Revoke All"
+    },
+    "permissions_notGranted": {
+        "message": "Not Granted"
+    },
+    "formats_multipleLinks_title": {
+        "message": "Formats - Multiple Links"
+    },
+    "formats_singleLink_title": {
+        "message": "Formats - Single Link"
+    },
+    "formats_menuCommands": {
+        "message": "Commands in Menus"
+    },
+    "formats_menuCommandsDesc": {
+        "message": "Choose what items to show in popup menus and context menus."
+    },
+    "formats_menuCommandsHelp": {
+        "message": "Disable built-in styles to hide the default tab export commands in the popup. On Firefox, these options also reflects context menus on tabs."
+    },
+    "formats_builtin_list": {
+        "message": "Built-in: Copy tab links as a list"
+    },
+    "formats_builtin_taskList": {
+        "message": "Built-in: Copy tab links as a task list"
+    },
+    "formats_builtin_title": {
+        "message": "Built-in: Copy tab titles"
+    },
+    "formats_builtin_url": {
+        "message": "Built-in: Copy tab URLs"
+    },
+    "formats_builtin_single": {
+        "message": "Built-in: Copy current page link"
+    },
+    "formats_singleLink_help": {
+        "message": "Turns off the default page/link options"
+    },
+    "formats_customFormatX": {
+        "message": "Copy as Custom Format $1"
+    },
+    "customFormat_defaultName": {
+        "message": "Custom Format $1"
+    },
+    "customFormat_display": {
+        "message": "Display"
+    },
+    "customFormat_showInPopup": {
+        "message": "Show in Popup Menu"
+    },
+    "customFormat_displayName": {
+        "message": "Display Name on Menu"
+    },
+    "customFormat_template": {
+        "message": "Template"
+    },
+    "customFormat_invalidTemplate": {
+        "message": "Invalid template"
+    },
+    "customFormat_input": {
+        "message": "Input"
+    },
+    "customFormat_preview": {
+        "message": "Preview"
+    },
+    "customFormat_save": {
+        "message": "Save"
+    }
+}

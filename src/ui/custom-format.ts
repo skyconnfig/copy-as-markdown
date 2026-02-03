@@ -1,6 +1,7 @@
 import CustomFormatsStorage from '../storage/custom-formats-storage.js';
 import CustomFormat from '../lib/custom-format.js';
 import type { Context, RenderInput, RenderInputLink } from '../lib/custom-format.js';
+import { localize } from './i18n.js';
 
 export class UI {
   slot: string;
@@ -26,11 +27,11 @@ export class UI {
     switch (this.context) {
       case 'multiple-links':
         this.sampleInput = UI.sampleInputForTabs;
-        placeholder.textContent = 'Multiple Links';
+        placeholder.textContent = browser.i18n.getMessage('options_multipleLinks');
         break;
       case 'single-link':
         this.sampleInput = UI.sampleInputForOneLink;
-        placeholder.textContent = 'Single Link';
+        placeholder.textContent = browser.i18n.getMessage('options_singleLink');
         break;
       default:
         throw new TypeError(`invalid context '${this.context}'`);
@@ -111,7 +112,7 @@ export class UI {
   }
 
   defaultName(): string {
-    return `Custom Format ${this.slot}`;
+    return browser.i18n.getMessage('customFormat_defaultName', this.slot);
   }
 
   static get sampleInputForOneLink(): RenderInputLink {
@@ -203,6 +204,7 @@ export class UI {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+  localize();
   try {
     const params = new URLSearchParams(window.location.search || '');
     const slot = params.get('slot');

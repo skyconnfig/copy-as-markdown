@@ -1,9 +1,10 @@
 {
-  "name": "Copy as Markdown",
+  "name": "__MSG_extensionName__",
   "version": "3.4.1",
   "version_name": "3.4.1",
   "manifest_version": 3,
-  "description": "Copy Link or Image as Markdown code",
+  "default_locale": "en",
+  "description": "__MSG_extensionDescription__",
   "permissions": [
     "activeTab",
     "alarms",
@@ -34,79 +35,79 @@
   },
   "commands": {
     "selection-as-markdown": {
-      "description": "Copy Selection as Markdown"
+      "description": "__MSG_command_selectionAsMarkdown__"
     },
     "current-tab-link": {
-      "description": "current tab: [title](url)"
+      "description": "__MSG_command_currentTabLink__"
     },
     "current-tab-custom-format-1": {
-      "description": "current tab: custom format 1"
+      "description": "__MSG_command_currentTabCustom1__"
     },
     "current-tab-custom-format-2": {
-      "description": "current tab: custom format 2"
+      "description": "__MSG_command_currentTabCustom2__"
     },
     "current-tab-custom-format-3": {
-      "description": "current tab: custom format 3"
+      "description": "__MSG_command_currentTabCustom3__"
     },
     "current-tab-custom-format-4": {
-      "description": "current tab: custom format 4"
+      "description": "__MSG_command_currentTabCustom4__"
     },
     "current-tab-custom-format-5": {
-      "description": "current tab: custom format 5"
+      "description": "__MSG_command_currentTabCustom5__"
     },
     "all-tabs-link-as-list": {
-      "description": "all tabs: - [title](url)"
+      "description": "__MSG_command_allTabsLinkAsList__"
     },
     "all-tabs-link-as-task-list": {
-      "description": "all tabs: - [ ] [title](url)"
+      "description": "__MSG_command_allTabsLinkAsTaskList__"
     },
     "all-tabs-title-as-list": {
-      "description": "all tabs: - title"
+      "description": "__MSG_command_allTabsTitleAsList__"
     },
     "all-tabs-url-as-list": {
-      "description": "all tabs: - url"
+      "description": "__MSG_command_allTabsUrlAsList__"
     },
     "highlighted-tabs-link-as-list": {
-      "description": "selected tabs: - [title](url)"
+      "description": "__MSG_command_selectedTabsLinkAsList__"
     },
     "highlighted-tabs-link-as-task-list": {
-      "description": "selected tabs: - [ ] [title](url)"
+      "description": "__MSG_command_selectedTabsLinkAsTaskList__"
     },
     "highlighted-tabs-title-as-list": {
-      "description": "selected tabs: - title"
+      "description": "__MSG_command_selectedTabsTitleAsList__"
     },
     "highlighted-tabs-url-as-list": {
-      "description": "selected tabs: - url"
+      "description": "__MSG_command_selectedTabsUrlAsList__"
     },
     "all-tabs-custom-format-1": {
-      "description": "all tabs: custom format 1"
+      "description": "__MSG_command_allTabsCustom1__"
     },
     "all-tabs-custom-format-2": {
-      "description": "all tabs: custom format 2"
+      "description": "__MSG_command_allTabsCustom2__"
     },
     "all-tabs-custom-format-3": {
-      "description": "all tabs: custom format 3"
+      "description": "__MSG_command_allTabsCustom3__"
     },
     "all-tabs-custom-format-4": {
-      "description": "all tabs: custom format 4"
+      "description": "__MSG_command_allTabsCustom4__"
     },
     "all-tabs-custom-format-5": {
-      "description": "all tabs: custom format 5"
+      "description": "__MSG_command_allTabsCustom5__"
     },
     "highlighted-tabs-custom-format-1": {
-      "description": "selected tabs: custom format 1"
+      "description": "__MSG_command_selectedTabsCustom1__"
     },
     "highlighted-tabs-custom-format-2": {
-      "description": "selected tabs: custom format 2"
+      "description": "__MSG_command_selectedTabsCustom2__"
     },
     "highlighted-tabs-custom-format-3": {
-      "description": "selected tabs: custom format 3"
+      "description": "__MSG_command_selectedTabsCustom3__"
     },
     "highlighted-tabs-custom-format-4": {
-      "description": "selected tabs: custom format 4"
+      "description": "__MSG_command_selectedTabsCustom4__"
     },
     "highlighted-tabs-custom-format-5": {
-      "description": "selected tabs: custom format 5"
+      "description": "__MSG_command_selectedTabsCustom5__"
     }
   },
   "options_ui": {

@@ -1,68 +1,89 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Copy as Markdown - Custom Format Help</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="../vendor/bulma.css">
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-<div class="container section is-max-desktop">
-  <h1 class="title">Copy as Markdown</h1>
-  <div id="flash-error" class="notification is-danger is-hidden">
-    <p></p>
-  </div>
-  <div class="columns">
-    <div class="column is-narrow" id="menu">
-      <aside class="menu">
-        <p class="menu-label">General</p>
-        <ul class="menu-list">
-          <li><a href="options.html">Markdown Style</a></li>
-          <li><a href="options-permissions.html">Permissions</a></li>
-          <p class="menu-label">Formats</p>
-          <li>
-            <a href="multiple-links.html">Multiple Links</a>
-            <ul class="menu-list" data-menu-custom-format-context="multiple-links">
-              <li><a data-menu-custom-format-slot="1" href="custom-format.html?context=multiple-links&slot=1">Custom Format 1</a></li>
-              <li><a data-menu-custom-format-slot="2" href="custom-format.html?context=multiple-links&slot=2">Custom Format 2</a></li>
-              <li><a data-menu-custom-format-slot="3" href="custom-format.html?context=multiple-links&slot=3">Custom Format 3</a></li>
-              <li><a data-menu-custom-format-slot="4" href="custom-format.html?context=multiple-links&slot=4">Custom Format 4</a></li>
-              <li><a data-menu-custom-format-slot="5" href="custom-format.html?context=multiple-links&slot=5">Custom Format 5</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="single-link.html">Single Link</a>
-            <ul class="menu-list" data-menu-custom-format-context="single-link">
-              <li><a data-menu-custom-format-slot="1" href="custom-format.html?context=single-link&slot=1">Custom Format 1</a></li>
-              <li><a data-menu-custom-format-slot="2" href="custom-format.html?context=single-link&slot=2">Custom Format 2</a></li>
-              <li><a data-menu-custom-format-slot="3" href="custom-format.html?context=single-link&slot=3">Custom Format 3</a></li>
-              <li><a data-menu-custom-format-slot="4" href="custom-format.html?context=single-link&slot=4">Custom Format 4</a></li>
-              <li><a data-menu-custom-format-slot="5" href="custom-format.html?context=single-link&slot=5">Custom Format 5</a></li>
-            </ul>
-          </li>
-        </ul>
-        <p class="menu-label">Others</p>
-        <ul class="menu-list">
-          <li><a class="is-active" href="custom-format-help.html">Help & Examples</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </aside>
+  <div class="container section is-max-desktop">
+    <h1 class="title">Copy as Markdown</h1>
+    <div id="flash-error" class="notification is-danger is-hidden">
+      <p></p>
     </div>
-    <div class="column">
-      <div class="box content">
-        <h2 class="title is-3">Custom Format Help</h2>
-        <p>Write the template in the Mustache template language. </p>
-        <h2 class="title is-4">Multiple Tabs</h2>
-        <p>The input object contains 2 attributes:
-          <code>links</code> for flattened links, and <code>grouped</code> for links grouped in Tab Groups
-          (supported browsers only).</p>
-        <p>Tab Groups appear in its original order.
-          For tabs that belong to a Tab Group, they will be gathered in an entry
-          with <code>"isGroup": true</code> attribute. The tabs appear in its nested <code>"links": [...]</code> array.
-          For tabs that do not belong to any Tab Group, they will appear at the top level.
-        <p>In loops, use <code>{{@index}}</code> for 0-based indexes, and <code>{{number}}</code> for 1-based indexes.</p>
-        <div><details><summary>Example Input: List of links without grouping</summary>
-        <pre class="is-size-7 is-overflow-x-scroll"><code>{
+    <div class="columns">
+      <div class="column is-narrow" id="menu">
+        <aside class="menu">
+          <p class="menu-label" data-i18n="options_general">General</p>
+          <ul class="menu-list">
+            <li><a href="options.html" data-i18n="options_title">Markdown Style</a></li>
+            <li><a href="options-permissions.html" data-i18n="options_permissions">Permissions</a></li>
+            <p class="menu-label" data-i18n="options_formats">Formats</p>
+            <li>
+              <a href="multiple-links.html" data-i18n="options_multipleLinks">Multiple Links</a>
+              <ul class="menu-list" data-menu-custom-format-context="multiple-links">
+                <li><a data-menu-custom-format-slot="1" href="custom-format.html?context=multiple-links&slot=1">Custom
+                    Format 1</a></li>
+                <li><a data-menu-custom-format-slot="2" href="custom-format.html?context=multiple-links&slot=2">Custom
+                    Format 2</a></li>
+                <li><a data-menu-custom-format-slot="3" href="custom-format.html?context=multiple-links&slot=3">Custom
+                    Format 3</a></li>
+                <li><a data-menu-custom-format-slot="4" href="custom-format.html?context=multiple-links&slot=4">Custom
+                    Format 4</a></li>
+                <li><a data-menu-custom-format-slot="5" href="custom-format.html?context=multiple-links&slot=5">Custom
+                    Format 5</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="single-link.html" data-i18n="options_singleLink">Single Link</a>
+              <ul class="menu-list" data-menu-custom-format-context="single-link">
+                <li><a data-menu-custom-format-slot="1" href="custom-format.html?context=single-link&slot=1">Custom
+                    Format 1</a></li>
+                <li><a data-menu-custom-format-slot="2" href="custom-format.html?context=single-link&slot=2">Custom
+                    Format 2</a></li>
+                <li><a data-menu-custom-format-slot="3" href="custom-format.html?context=single-link&slot=3">Custom
+                    Format 3</a></li>
+                <li><a data-menu-custom-format-slot="4" href="custom-format.html?context=single-link&slot=4">Custom
+                    Format 4</a></li>
+                <li><a data-menu-custom-format-slot="5" href="custom-format.html?context=single-link&slot=5">Custom
+                    Format 5</a></li>
+              </ul>
+            </li>
+          </ul>
+          <p class="menu-label" data-i18n="options_others">Others</p>
+          <ul class="menu-list">
+            <li><a class="is-active" href="custom-format-help.html" data-i18n="options_help">Help & Examples</a></li>
+            <li><a href="about.html" data-i18n="options_about">About</a></li>
+          </ul>
+        </aside>
+      </div>
+      <div class="column">
+        <div class="box content">
+          <h2 class="title is-3" data-i18n="help_title">Custom Format Help</h2>
+          <p data-i18n="help_mustacheNote">Write the template in the Mustache template language. </p>
+          <h2 class="title is-4" data-i18n="help_multipleTabs">Multiple Tabs</h2>
+          <p data-i18n="help_inputObjectDesc" data-i18n-args="<code>links</code>,<code>grouped</code>">The input object
+            contains 2 attributes:
+            <code>links</code> for flattened links, and <code>grouped</code> for links grouped in Tab Groups
+            (supported browsers only).
+          </p>
+          <p data-i18n="help_groupOrderNote"
+            data-i18n-args="<code>&quot;isGroup&quot;: true</code>,<code>&quot;links&quot;: [...]</code>">Tab Groups
+            appear in its original order.
+            For tabs that belong to a Tab Group, they will be gathered in an entry
+            with <code>"isGroup": true</code> attribute. The tabs appear in its nested <code>"links": [...]</code>
+            array.
+            For tabs that do not belong to any Tab Group, they will appear at the top level.
+          <p data-i18n="help_loopNote" data-i18n-args="<code>{{@index}}</code>,<code>{{number}}</code>">In loops, use
+            <code>{{@index}}</code> for 0-based indexes, and <code>{{number}}</code> for 1-based indexes.
+          </p>
+          <div>
+            <details>
+              <summary data-i18n="help_exampleGrouping">Example Input: List of links without grouping</summary>
+              <pre class="is-size-7 is-overflow-x-scroll"><code>{
   "links": [
     { "title": "Example 1", "url": "https://example.com/1", "number":1 },
     { "title": "Example 2", "url": "https://example.com/2", "number":2 },
@@ -76,10 +97,14 @@
     { "title": "Example 4", "url": "https://example.com/4", "number":4, "isGroup": false, "links": [] }
   ]
 }</code></pre>
-        </details></div>
-        <div><details><summary>Example Input: List of links with grouping</summary>
-        <p class="help">Suppose tab 2 and 3 are grouped in Group A, but tab 1 and 4 are not in any group:</p>
-        <pre class="is-size-7 is-overflow-x-scroll"><code>{
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary data-i18n="help_exampleGroupingWith">Example Input: List of links with grouping</summary>
+              <p class="help" data-i18n="help_groupANote">Suppose tab 2 and 3 are grouped in Group A, but tab 1 and 4
+                are not in any group:</p>
+              <pre class="is-size-7 is-overflow-x-scroll"><code>{
 "links": [
   {"title": "Example 1", "url": "https://example.com/1", "number": 1},
   {"title": "Example 2", "url": "https://example.com/2", "number": 2},
@@ -104,49 +129,55 @@
   {"title": "Example 7", "url": "https://example.com/7", "isGroup": false, "number": 5, "links": []}
 ]
 }</code></pre>
-      </details></div>
-        <h2 class="title is-4">Example Templates</h2>
-        <p>For more examples, check out <a href="https://github.com/yorkxin/copy-as-markdown/wiki/Custom-Format-Examples" target="_blank">the official Wiki</a>.</p>
-<div class="card">
-  <header class="card-header">
-    <p class="card-header-title">Reference Style</p>
-  </header>
-  <div class="card-content">
-    <div class="columns">
-      <div class="column is-half">
-        <p>Template:</p>
-        <pre class="is-size-7 is-overflow-scroll-x"><code>{{#links}}
+            </details>
+          </div>
+          <h2 class="title is-4" data-i18n="help_exampleTemplates">Example Templates</h2>
+          <p data-i18n="help_wikiNote"
+            data-i18n-args="<a href=&quot;https://github.com/yorkxin/copy-as-markdown/wiki/Custom-Format-Examples&quot; target=&quot;_blank&quot;>the official Wiki</a>">
+            For more examples, check out <a
+              href="https://github.com/yorkxin/copy-as-markdown/wiki/Custom-Format-Examples" target="_blank">the
+              official Wiki</a>.</p>
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title" data-i18n="help_refStyle">Reference Style</p>
+            </header>
+            <div class="card-content">
+              <div class="columns">
+                <div class="column is-half">
+                  <p data-i18n="help_template">Template:</p>
+                  <pre class="is-size-7 is-overflow-scroll-x"><code>{{#links}}
 - [{{title}}][{{number}}]
 {{/links}}
 
 {{#links}}
 [{{number}}]:{{url}}
 {{/links}}</code></pre>
-      </div>
-      <div class="column is-half">
-        <p>Output:</p>
-        <pre class="is-size-7 is-overflow-scroll-x"><code>- [Example 1][1]
+                </div>
+                <div class="column is-half">
+                  <p data-i18n="help_output">Output:</p>
+                  <pre class="is-size-7 is-overflow-scroll-x"><code>- [Example 1][1]
 - [Example 2][2]
 - [Example 3][3]
 
 [1]:https://example.com/1
 [2]:https://example.com/2
 [3]:https://example.com/3</code></pre>
-      </div>
-    </div>
-  </div>
-</div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<div class="card">
-  <header class="card-header">
-    <p class="card-header-title">Groups as Ordered List</p>
-  </header>
-  <div class="card-content">
-    <p>Use <code>{{number}}</code> for the current 1-based index</p>
-    <div class="columns">
-      <div class="column is-half">
-        <p>Template:</p>
-<pre class="is-size-7 is-overflow-scroll-x"><code>{{#grouped}}
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title" data-i18n="help_groupOrdered">Groups as Ordered List</p>
+            </header>
+            <div class="card-content">
+              <p data-i18n="help_useNumber" data-i18n-args="<code>{{number}}</code>">Use <code>{{number}}</code> for the
+                current 1-based index</p>
+              <div class="columns">
+                <div class="column is-half">
+                  <p data-i18n="help_template">Template:</p>
+                  <pre class="is-size-7 is-overflow-scroll-x"><code>{{#grouped}}
 {{#isGroup}}
 {{#links}}
     {{number}}. [{{title}}]({{url}})
@@ -156,10 +187,10 @@
 {{number}}. [{{title}}]({{url}})
 {{/isGroup}}
 {{/grouped}}</code></pre>
-      </div>
-      <div class="column is-half">
-        <p>Output:</p>
-<pre class="is-size-7 is-overflow-scroll-x"><code>1. [Example 1](https://example.com/1)
+                </div>
+                <div class="column is-half">
+                  <p data-i18n="help_output">Output:</p>
+                  <pre class="is-size-7 is-overflow-scroll-x"><code>1. [Example 1](https://example.com/1)
 2. [Example 2](https://example.com/2)
     1. [Example 3](https://example.com/3)
     2. [Example 4](https://example.com/4)
@@ -167,16 +198,17 @@
 4. [Example 6](https://example.com/6)
 5. [Example 7](https://example.com/7)
 </code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-      </div>
-    </div>
-  </div>
 
-</div>
-<script src="../vendor/browser-polyfill.js"></script>
-<script src="../ui/options-ui.js" type="module"></script>
+  </div>
+  <script src="../vendor/browser-polyfill.js"></script>
+  <script src="../ui/options-ui.js" type="module"></script>
 </body>
+
 </html>
